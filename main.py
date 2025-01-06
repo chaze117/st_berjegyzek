@@ -28,7 +28,7 @@ def extract_pdf_pages(pdf_file, page_numbers):
 
 
 st.title("Bérjegyzék lekérése")
-st.markdown("<h3>Aktuális bérjegyzék: 2024. november</h3>",unsafe_allow_html=True)
+st.markdown("<h3>Aktuális bérjegyzék: 2024. december</h3>",unsafe_allow_html=True)
 ado = st.text_input("Adóazonosító")
 binary_content = None
 if st.button("Bérjegyzék előkészítése") : 
