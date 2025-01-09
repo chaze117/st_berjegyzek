@@ -33,7 +33,7 @@ def extract_pdf_pages(pdf_file, page_numbers):
     output_pdf.seek(0)
     return output_pdf
 
-bucketfiles = client.list_objects("Berjegyzekek")
+bucketfiles = client.list_objects("Berjegyzekek",limit=1000)
 files = []
 for file in bucketfiles:
       files.append(file['name'])
