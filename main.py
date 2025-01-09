@@ -38,7 +38,7 @@ files = []
 for file in bucketfiles:
       files.append(file['name'])
 st.title("Bérjegyzék lekérése")
-# st.markdown("<h3>Aktuális bérjegyzék: 2024. december</h3>",unsafe_allow_html=True)
+files.sort(reverse=True)
 file = st.selectbox("Hónap kiválasztása:",files)
 ado = st.text_input("Adóazonosító")
 binary_content = None
